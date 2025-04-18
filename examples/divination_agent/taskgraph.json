@@ -1,0 +1,68 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": null,
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Welcome to the Divination Assistant! I can help you interpret your fortune using I Ching hexagrams. Shall we begin?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "8ba12e04-3f5a-4e8d-b5a1-1c1f3e7d8f2a",
+                    "name": "DivinationWorker"
+                },
+                "attribute": {
+                    "value": "Based on the six-digit number and inquiry direction you provided, we have generated the following hexagram and analyzed the changing lines. Here is the interpretation: ...",
+                    "task": "Given a 6-digit number and a specified inquiry type from the user, the system will generate the corresponding hexagram, identify the changing lines (if any), and produce an interpretation accordingly.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User provides a specific inquiry direction and a six-digit number; generate a hexagram, analyze changing lines, and produce an interpretation.",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "Divination Assistant",
+    "user_objective": "This divination assistant provides I Ching–based fortune-telling services. It can generate hexagrams, analyze changing lines, and offer guidance on travel, career, love, studies, and personal growth.",
+    "builder_objective": "This divination assistant helps collect from users: (1) Inquiry direction (travel fortune, love fortune, career fortune, academic fortune), and (2) Six-digit number input, in order to generate accurate hexagram interpretations.",
+    "tasks": [
+        "Collect the user's specific inquiry direction (travel fortune, love fortune, career fortune, academic fortune) and a six-digit number; based on these, generate a hexagram, analyze changing lines, and produce an interpretation."
+    ],
+    "workers": [
+        {
+            "id": "8ba12e04-3f5a-4e8d-b5a1-1c1f3e7d8f2a",
+            "name": "DivinationWorker",
+            "path": "divination_worker.py"
+        }
+    ],
+    "domain": "Metaphysics and Traditional Wisdom",
+    "intro": "",
+    "tools": [],
+    "nluapi": "",
+    "slotfillapi": ""
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "goal": "report product issue",
+        "product_experience_level": "used competitor product",
+        "customer_type": "returning customer",
+        "persona": "aggressive",
+        "current_webpage": "about page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "third party website",
+        "buying_behavior": "economic",
+        "budget": "mid-range budget",
+        "purchase_history": "['purchased collaborative robots'",
+        "location": "'Asia']"
+    },
+    {
+        "goal": "order tracking",
+        "product_experience_level": "new to this product",
+        "customer_type": "returning customer",
+        "persona": "neutral",
+        "current_webpage": "home page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "third party website",
+        "buying_behavior": "economic",
+        "budget": "low budget",
+        "purchase_history": "['purchased collaborative robots'",
+        "location": "'Europe'"
+    },
+    {
+        "goal": "request repair",
+        "product_experience_level": "used competitor product",
+        "customer_type": "returning customer",
+        "persona": "aggressive",
+        "current_webpage": "about page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "friend recommendation",
+        "buying_behavior": "economic",
+        "budget": "low budget",
+        "purchase_history": "'purchased delivery robots'",
+        "location": "'Europe'"
+    },
+    {
+        "goal": "order tracking",
+        "product_experience_level": "new to this product",
+        "customer_type": "returning customer",
+        "persona": "aggressive",
+        "current_webpage": "about page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "search engine results",
+        "buying_behavior": "quality oriented",
+        "budget": "low budget",
+        "purchase_history": "'purchased delivery robots'",
+        "location": "['United States'"
+    },
+    {
+        "goal": "asking replacement",
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "aggressive",
+        "current_webpage": "about page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "social media",
+        "buying_behavior": "economic",
+        "budget": "high budget",
+        "purchase_history": "['purchased collaborative robots'",
+        "location": "'Europe'"
+    }
+]

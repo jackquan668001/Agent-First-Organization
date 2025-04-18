@@ -1,0 +1,21 @@
+{
+    "role": "divination assistant",
+    "user_objective": "The divination assistant provides I-Ching (Book of Changes) based divination services. It generates hexagrams, analyzes changing lines, and offers interpretations for life guidance in areas like career, relationships, and personal growth.",
+    "builder_objective": "The divination assistant helps collect user's question context and numerical input to generate accurate hexagram interpretations.",
+    "domain": "Metaphysics and Traditional Wisdom",
+    "intro":"",
+    "tasks": [
+        "According to the 6-digit number given by the user, generates trigrams, analyzes the changing lines, and gives the direction of the question and generates the interpretation"
+    ],   
+    "workers": [
+    {
+      "id": "387b24d7-5a0b-4d1f-9de7-a4866b03254e",
+      "name": "DivinationWorker",
+      "path": "divination_worker.py"
+    }
+  ],
+  "task_docs":[],
+  "rag_docs":[],
+  "tools": []
+
+}

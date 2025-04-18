@@ -30,7 +30,7 @@ def chatgpt_chatbot(messages, client, model=MODEL["model_type_or_path"]):
    
     if MODEL['llm_provider'] != 'anthropic':
         answer = client.chat.completions.create(
-            model=MODEL['model_type_or_path'], messages=messages, temperature=0.1
+            model=MODEL['model_type_or_path'], messages=messages, temperature=0.1,
         ).choices[0].message.content.strip()
     else:
         kwargs = {
